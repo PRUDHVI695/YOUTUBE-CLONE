@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sammy's MindChirps</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      body {
+        background: #f9f9f9
+          url(https://www.mindchirps.com/background/background15.jpg) no-repeat
+          center center fixed;
+        color: #333;
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .card {
+        margin-bottom: 15px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .card-header {
+        background-color: #1e525b;
+        color: #c2f2fc;
+        font-weight: bold;
+        padding: 10px 15px;
+      }
+      .card-body {
+        display: flex;
+        align-items: flex-start;
+        padding: 10px 15px;
+      }
+      .card-body img {
+        width: 90px;
+        height: auto;
+        object-fit: cover;
+        margin-right: 15px;
+      }
+      .btn-secondary {
+        background-color: #1e525b;
+        border-color: #1e525b;
+      }
+      .btn-secondary:hover {
+        background-color: #16434a;
+        border-color: #16434a;
+      }
+
+      .sidebar-section {
+        background-color: #1e525b;
+        color: white;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        font-size: 16px;
+      }
+      .sidebar-section input[type="email"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 4px;
+      }
+
+      #footer {
+        background-color: #1e525b;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+      }
+
+      #footer a {
+        color: white;
+        margin: 0 10px;
+        font-size: 18px;
+        transition: color 0.3s ease;
+      }
+      #footer a:hover {
+        color: #c2f2fc;
+      }
+
+      .pagination .page-link {
+        color: #1e525b;
+      }
+      .pagination .active .page-link {
+        background-color: #1e525b;
+        border-color: #1e525b;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content-wrapper container py-4">
+      <div class="text-center mb-4">
+        <h1 style="color: #1e525b">📬 Sammy's MindChirps</h1>
+      </div>
+
+      <div class="row">
+        <!-- Left Main Content -->
+        <div class="col-md-8">
+          <!-- Book Cards -->
+          <div class="card">
+            <div class="card-header">Book Review: Atomic Habits</div>
+            <div class="card-body">
+              <img
+                src="https://m.media-amazon.com/images/I/91bYsX41DVL.jpg"
+                class="img-thumbnail"
+              />
+              <div>
+                <p>
+                  A practical guide to building good habits and breaking bad
+                  ones.
+                </p>
+                <a href="#" class="btn btn-secondary btn-sm">Book Review</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">Book Review: The Power of Now</div>
+            <div class="card-body">
+              <img
+                src="https://m.media-amazon.com/images/I/61Ij8nLooNL._UF1000,1000_QL80_.jpg"
+                class="img-thumbnail"
+              />
+              <div>
+                <p>
+                  Focuses on mindfulness and living fully in the present moment.
+                </p>
+                <a href="#" class="btn btn-secondary btn-sm">Book Review</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">Book Review: Think and Grow Rich</div>
+            <div class="card-body">
+              <img
+                src="https://m.media-amazon.com/images/I/61IxJuRI39L.jpg"
+                class="img-thumbnail"
+              />
+              <div>
+                <p>
+                  Classic guide to personal and financial success through
+                  mindset.
+                </p>
+                <a href="#" class="btn btn-secondary btn-sm">Book Review</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">Book Review: Deep Work</div>
+            <div class="card-body">
+              <img
+                src="https://m.media-amazon.com/images/I/71din4TLubL._UF1000,1000_QL80_.jpg"
+                class="img-thumbnail"
+              />
+              <div>
+                <p>
+                  Teaches the value of focused, undistracted work in a
+                  distracted world.
+                </p>
+                <a href="#" class="btn btn-secondary btn-sm">Book Review</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">Book Review: Thinking, Fast and Slow</div>
+            <div class="card-body">
+              <img
+                src="https://m.media-amazon.com/images/I/71f6DceqZAL.jpg"
+                class="img-thumbnail"
+              />
+              <div>
+                <p>
+                  Explains the two systems of thinking and how they affect
+                  decisions.
+                </p>
+                <a href="#" class="btn btn-secondary btn-sm">Book Review</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination -->
+          <nav>
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled">
+                <a class="page-link" href="#">«</a>
+              </li>
+              <li class="page-item active">
+                <a class="page-link" href="#">1</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">»</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="col-md-4">
+          <div class="sidebar-section">
+            <h5>Newsletter</h5>
+            <input type="email" placeholder="Email Address" />
+            <button class="btn btn-primary btn-sm btn-block">Subscribe</button>
+          </div>
+
+          <div class="sidebar-section">
+            <h5>About Sammy</h5>
+            <p>
+              Hello! Welcome to Sammy's MindChirps. LIFE is an acronym for
+              Laboratory of Infinite Freedom to Experiment...
+            </p>
+          </div>
+
+          <div class="sidebar-section">
+            <h5>Categories</h5>
+            <ul class="list-unstyled">
+              <li>📚 Book Reviews (18)</li>
+              <li>🎬 Movie Reviews (18)</li>
+              <li>🧠 My Experience (1)</li>
+              <li>💡 Interesting Facts (1)</li>
+              <li>📺 TV Series Reviews (1)</li>
+              <li>📖 Book Excerpts (3)</li>
+            </ul>
+          </div>
+
+          <div class="sidebar-section">
+            <h3>Tagss</h3>
+            <ul class="tags-list">
+              <li><a href="#">Designing</a></li>
+              <li><a href="#">Technology</a></li>
+              <li><a href="#">Animals</a></li>
+              <li><a href="#">Psychology</a></li>
+              <li><a href="#">Self-Help Book</a></li>
+              <li><a href="#">Romance</a></li>
+              <li><a href="#">Finance</a></li>
+              <li><a href="#">Drama</a></li>
+              <li><a href="#">Thriller</a></li>
+              <li><a href="#">yoga</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+      <p>
+        © All rights reserved by <strong>Sammy's MindChirps</strong><br />
+        Logo credits: VINOTH R <br />
+        Developed and Hosted by VINOTH R
+      </p>
+      <div>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+      </div>
+    </div>
+  </body>
+</html>
