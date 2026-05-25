@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/sidebar.css" />
+    <link rel="stylesheet" href="channel/styles/general.css" />
+    <link rel="stylesheet" href="channel/styles/header.css" />
+    <link rel="stylesheet" href="channel/styles/video.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="left-section">
+        <img class="hamburger-menu" src="icons/1hamburger-menu.svg" alt="Menu" />
+        <img class="youtube-logo" src="icons/2youtube-logo.svg" alt="YouTube Logo" />
+      </div>
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search" />
+        <div class="search-button">
+          <img class="search-icon" src="icons/3search.svg" alt="Search" />
+          <span class="tooltip">Search</span>
+        </div>
+        <button class="voice-search-button" type="button">
+          <img class="voice-search-icon" src="icons/4voice-search-icon.svg" alt="Voice search" />
+          <span class="tooltip">Voice search</span>
+        </button>
+      </div>
+      <div class="right-section">
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="icons/5upload.svg" alt="Create" />
+          <span class="tooltip">Create</span>
+        </div>
+        <div class="youtube-apps-icon-container">
+          <img class="youtube-apps-icon" src="icons/6youtube-apps.svg" alt="Apps" />
+          <span class="tooltip">YouTube apps</span>
+        </div>
+        <div class="notification-icon-container">
+          <img class="notifications-icon" src="icons/7notifications.svg" alt="Notifications" />
+          <span class="notifications-count">3</span>
+          <span class="tooltip">Notifications</span>
+        </div>
+        <img class="current-user-picture" src="channel/unnamed1.jpg" alt="User profile" />
+      </div>
+    </div>
+    <aside class="sidebar">
+      <div class="sidebar-link">
+        <img src="icons/8home.svg" alt="Home" />
+        <span>Home</span>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/9explore.svg" alt="Explore" />
+        <span>Explore</span>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/10subscriptions.svg" alt="Subscriptions" />
+        <span>Subscriptions</span>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/11originals.svg" alt="Originals" />
+        <span>Originals</span>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/12youtube-music.svg" alt="YouTube Music" />
+        <span>Music</span>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/13library.svg" alt="Library" />
+        <span>Library</span>
+      </div>
+    </aside>
+    <main class="content">
+      <div class="video-grid">
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnail/hq7201.avif" />
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel/unnamed1.jpg" />
+            </div>
+            <div class="video-info">
+              <p class="video-title">HTML & CSS FULL Course-Begininner to Pro</p>
+              <p class="video-author">SuperSimpleDev</p>
+              <p class="video-status">15M views &#183; 3 years ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnail/hq7202.avif" />
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel/unnamed2.jpg" />
+            </div>
+            <div class="video-info">
+              <p class="video-title">WAR 2 Official Teaser</p>
+              <p class="video-author">YRF</p>
+              <p class="video-status">18M views &#183; 5 days ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnail/hq7203.avif" />
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel/unnamed3.jpg" />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                3 Hours Of Amazing Nature Scenes & Relaxing Music for Stress
+                Relief
+              </p>
+              <p class="video-author">Cat Trumpet</p>
+              <p class="video-status">21M views &#183; 6 years ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnail/hq7204.avif" />
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel/unnamed4.jpg" />
+            </div>
+            <div class="video-info">
+              <p class="video-title">Song Sindoor IN: Sukhwnder Singh</p>
+              <p class="video-author">T-Series</p>
+              <p class="video-status">7.2M views &#183; 4 days ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnail/hq7205.avif" />
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel/unnamed5.jpg" />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Top 20 New Technology Trends That Will Define The Future
+              </p>
+              <p class="video-author">AI Uncovered</p>
+              <p class="video-status">512K views &#183; 5 months ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnail/hq7206.avif" />
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel/unnamed6.jpg" />
+            </div>
+            <div class="video-info">
+              <p class="video-title">Java Full Course for Beginners</p>
+              <p class="video-author">Programming with Mash</p>
+              <p class="video-status">12M views &#183; 5 years ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnail/hq7207.avif" />
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel/unnamed7.jpg" />
+            </div>
+            <div class="video-info">
+              <p class="video-title">Prema Velluva-Lyrical| HIT 3| Nani</p>
+              <p class="video-author">Saregama Telugu</p>
+              <p class="video-status">16M views &#183; 2 months ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnail/hq7208.avif" />
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel/unnamed8.jpg" />
+            </div>
+            <div class="video-info">
+              <p class="video-title">Yaalo Yaalaa| Animal</p>
+              <p class="video-author">T-Series Telugu</p>
+              <p class="video-status">46M views &#183; 1 year ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnail/hq7209.avif" />
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel/unnamed9.jpg" />
+            </div>
+            <div class="video-info">
+              <p class="video-title">Animals of Amazon 4K</p>
+              <p class="video-author">Scenic Scenes</p>
+              <p class="video-status">33M views &#183; 2 years ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnail/hq72010.avif" />
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel/unnamed10.jpg" />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                TOP 5 Hogh Paying Tech Skills To Learn in 2025 || Telugu
+              </p>
+              <p class="video-author">Harsha verse</p>
+              <p class="video-status">160k views &#183; 5 months ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnail/hq72011.avif" />
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel/unnamed11.jpg" />
+            </div>
+            <div class="video-info">
+              <p class="video-title">TOP GUN : Maverick Best Scenes</p>
+              <p class="video-author">Movieclips</p>
+              <p class="video-status">3.3M views &#183; 10 months ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnail/hq72012.avif" />
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel/unnamed12.jpg" />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                KINGDOM-Official Teaser| Vijay Devarakonda
+              </p>
+              <p class="video-author">Sithara Entertainments</p>
+              <p class="video-status">593k views &#183; 3 months ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
